@@ -1,0 +1,117 @@
+@media (width < 720px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 84px;
+    background-color: var(--text-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked~ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (width > 860px) {
+  .wrapper:hover>.image {
+    transform: translate(-80px) rotate(-5deg);
+  }
+
+  .wrapper:hover>.circle {
+    animation: none;
+    transform: translate(80px) rotate(5deg);
+  }
+}
+
+@keyframes movement {
+  0% {
+    left: 4px;
+    scale: 1.02;
+  }
+
+  50% {
+    left: -4px;
+    scale: 1.01;
+  }
+
+  100% {
+    left: 4px;
+    scale: 1.02;
+  }
+}
+
+@media (width < 860px) {
+  .content-container {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .tech-stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (width < 860px) {
+  .container .about {
+    width: 100%;
+    text-align: center;
+  }
+
+  .who-i-am h2,
+  .philosophy h2 {
+    text-align: left;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
