@@ -330,3 +330,96 @@ a {
 .signature a:hover {
   text-decoration: underline;
 }
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 3rem;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: lightblue;
+  padding: 4rem 3rem;
+  border-radius: 8%;
+  width: 306px;
+}
+
+.contact-image {
+  width: 140px;
+  height: 140px;
+  background-image: url(/img/WhatsApp\ Image\ 2025-03-14\ at\ 06.04.07_be0447b4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.contact-image:hover {
+  transform: translateY(-5px);
+}
+
+.socials {
+  margin-top: 2rem;
+}
+
+.socials i {
+  margin: 0 0.43rem;
+  font-size: 1.4rem;
+}
+
+.socials a {
+  color: #333;
+}
+
+.socials a:hover {
+  color: #777777;
+}
+
+hr {
+  width: 240px;
+  color: #333;
+  border: none;
+  outline: 1px solid #5e5e5eb2;
+  margin: 1rem 0;
+}
+
+.contact {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.copyright {
+  margin-top: 1.3rem;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 1rem 0;
+}
+
+.connect i {
+  transition: ease-in-out 0.4s;
+}
+
+.connect:hover>i {
+  margin-left: 10px;
+}
