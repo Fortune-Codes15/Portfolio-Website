@@ -259,7 +259,7 @@ span {
   justify-content: space-evenly;
   width: 100%;
   margin: 8rem auto;
-  height: 420px;
+  height: max-content;
   flex-wrap: wrap;
 }
 
@@ -329,4 +329,73 @@ a {
 
 .signature a:hover {
   text-decoration: underline;
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: #0e0e0e;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 2rem 0;
+  padding-bottom: 0;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socials i {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.socials a {
+  color: #f4f4f4;
+}
+
+.socials a:hover {
+  color: #e34c26;
+}
+
+.email {
+  text-align: center;
+}
+
+.email i {
+  font-size: 1.5rem;
+  color: #f4f4f4;
+  font-weight: 300;
+}
+
+.email p {
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.email a {
+  color: white;
+  font-weight: 300;
+}
+
+.email-me {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
 }
