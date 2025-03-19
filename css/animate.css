@@ -77,19 +77,16 @@
     justify-content: center;
     flex-direction: column;
   }
-}
 
-@media (width < 860px) {
   .container .about {
     width: 100%;
-    text-align: center;
   }
 
-  .who-i-am h2,
-  .philosophy h2 {
-    text-align: left;
+  .image_about {
+    margin-bottom: 2rem;
   }
 }
+
 
 @keyframes float {
   0% {

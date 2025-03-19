@@ -256,17 +256,130 @@ span {
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
   margin: 8rem auto;
   height: max-content;
   flex-wrap: wrap;
 }
 
+.image_about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 320px;
+  height: 400px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  background: url(/img/image.png) center center;
+  background-size: cover;
+}
+
+.background {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  border-radius: inherit;
+  top: 30px;
+  left: 45px;
+  background-color: rebeccapurple;
+  z-index: -12;
+}
+
+.image_about i {
+  position: absolute;
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+
+.star {
+  top: 0px;
+  left: 20px;
+}
+
+.star1 {
+  bottom: 0px;
+  left: 20px;
+}
+
+.star2 {
+  top: 0px;
+  right: 20px;
+}
+
+.star3 {
+  bottom: 0px;
+  right: 20px;
+}
+
+.image_about:hover>.star {
+  top: -30px;
+  left: -30px;
+  color: #e34c26;
+  opacity: 1;
+  animation: bottomMove 2s ease-in-out infinite;
+}
+
+.image_about:hover>.star1 {
+  bottom: -30px;
+  left: -30px;
+  color: #e34c26;
+  opacity: 1;
+  animation: topMove 2s ease-in-out infinite;
+}
+
+.image_about:hover>.star2 {
+  top: -30px;
+  right: -30px;
+  color: #e34c26;
+  opacity: 1;
+  animation: bottomMove 2s ease-in-out infinite;
+}
+
+.image_about:hover>.star3 {
+  bottom: -30px;
+  right: -30px;
+  color: #e34c26;
+  opacity: 1;
+  animation: topMove 2s ease-in-out infinite;
+}
+
+@keyframes topMove {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes bottomMove {
+  0% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+}
+
 .container .about {
   width: 50%;
   padding-left: 2rem;
   line-height: 2rem;
+  text-align: center;
 }
 
 .container .about p {
@@ -288,32 +401,9 @@ span {
   background-color: #0078d4;
 }
 
-.who-i-am h2,
-.philosophy h2 {
+.who-i-am h2 {
   margin: 1rem 0;
   position: relative;
-}
-
-.who-i-am h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 62px;
-  height: 8px;
-  background-image: linear-gradient(to right, #00a6ed, #ff6f61);
-  border-radius: 8px;
-}
-
-.philosophy h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 162px;
-  height: 8px;
-  background-image: linear-gradient(to right, #00a6ed, #ff6f61);
-  border-radius: 8px;
 }
 
 .signature {
@@ -339,9 +429,9 @@ footer {
 .footer {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 1.4rem;
 }
 
 .socials {
